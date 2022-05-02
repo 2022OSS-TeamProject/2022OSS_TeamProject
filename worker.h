@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 typedef struct Worker{
     char name[20];       //직원의 이름
     char position[20];   //직원의 직급
@@ -5,8 +7,7 @@ typedef struct Worker{
     int iMin;            //직원 출입 분
     int oHour;           //직원 퇴근 시
     int oMin;            //직원 퇴근 분
-    char attend;         //직원 정상 출근 여부 (yes: 'O, no: 'Y')
-    int totalWorked;     //직원 총 하루 근무시간
+    int totalWorked;     //직원 총 하루 근무시간 (시까지만 표출)
 } worker;
 
 int selectWorker();                               // 원하는 기능을 고르게 하는 함수 (기본 출력)
@@ -23,4 +24,4 @@ int loadData(worker *s, int count);               // 직원 데이터 걊 파일
 
 void searchWorkerName(worker *s, int count);      // 직원 검색 기능 함수 (직원 이름)
 void searchWorkerPosition(worker *s, int count);  // 직원 검색 기능 함수 (직원 직급)
-void searchWorkerAttend(worker *s, int count);     // 직원 검색 기능 함수 (직원 정상 출근 여부)
+void searchWorkerTotalTime(worker *s, int count); // 직원 검색 기능 함수 (직원 총 근무 시간)
