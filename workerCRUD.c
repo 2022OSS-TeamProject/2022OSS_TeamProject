@@ -67,7 +67,8 @@ int updateWorker(worker* s) {
     scanf(" %d", &s->oHour);
     printf("새 퇴근 분 ? ");
     scanf(" %d", &s->oMin);
-    s->totalWorked=s->iHour-s->oHour;
+    if (s->iMin>s->oMin) s->totalWorked=s->oHour-s->iHour-1;
+    else s->totalWorked=s->oHour-s->iHour;
     printf("=> 직원 변경 완료 ! \n");
     return 1;
 }
