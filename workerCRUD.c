@@ -71,3 +71,10 @@ int updateWorker(worker* s) {
     printf("=> 직원 변경 완료 ! \n");
     return 1;
 }
+
+int deleteWorker(worker *s) {
+    s->iHour=-1;
+    s->oHour=-1;
+    printf("=> 삭제됨!\n");
+    return 1;
+}
