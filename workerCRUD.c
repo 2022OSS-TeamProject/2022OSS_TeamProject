@@ -53,3 +53,21 @@ int createWorker(worker *s) {
     else s->totalWorked=s->oHour-s->iHour;
     return 1;
 }
+
+int updateWorker(worker* s) {
+    printf("\n새 직원이름 ? ");
+    scanf(" %[^\n]s", s->name);
+    printf("새 직원 직급 ? ");
+    scanf(" %[^\n]s", s->position);
+    printf("새 출근 시 ? ");
+    scanf(" %d", &s->iHour);
+    printf("새 출근 분 ? ");
+    scanf(" %d", &s->iMin);
+    printf("새 퇴근 시 ? ");
+    scanf(" %d", &s->oHour);
+    printf("새 퇴근 분 ? ");
+    scanf(" %d", &s->oMin);
+    s->totalWorked=s->iHour-s->oHour;
+    printf("=> 직원 변경 완료 ! \n");
+    return 1;
+}
