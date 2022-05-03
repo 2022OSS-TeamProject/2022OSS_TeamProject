@@ -1,7 +1,8 @@
 2022OSS_TeamProject(출퇴근 관리 시스템) 
 =============
 
-<img src="https://user-images.githubusercontent.com/100776540/165881371-f8677639-04e4-4144-b7fe-ec31fd1f9719.jpg" width="250" height="250">
+
+<p align="center"><img src="https://user-images.githubusercontent.com/100776540/165881371-f8677639-04e4-4144-b7fe-ec31fd1f9719.jpg" width="300" height="250">
 
 ## miniproject 주제
   
