@@ -27,3 +27,29 @@ void listWorker(worker *s, int count) {
     }
     printf("\n총 %d명의 직원이 있습니다.\n", a);
 }
+
+int selectDataNo (worker *s, int count) {
+    int no;
+    listWorker(s, count);
+    printf("번호는 (취소 : 0)? ");
+    scanf("%d", &no);
+    return no;
+}
+
+int createWorker(worker *s) {
+    printf("\n직원 이름 ? ");
+    scanf(" %[^\n]s", s->name);
+    printf("직원 직급 ? ");
+    scanf(" %[^\n]s", s->position);
+    printf("출근 시 ? ");
+    scanf(" %d", &s->iHour);
+    printf("출근 분 ? ");
+    scanf(" %d", &s->iMin);
+    printf("퇴근 시 ? ");
+    scanf(" %d", &s->oHour);
+    printf("퇴근 분 ? ");
+    scanf(" %d", &s->oMin);
+    if (s->iMin>s->oMin) s->totalWorked=s->oHour-s->iHour-1;
+    else s->totalWorked=s->oHour-s->iHour;
+    return 1;
+}
