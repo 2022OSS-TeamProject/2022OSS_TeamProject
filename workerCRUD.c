@@ -12,6 +12,7 @@ void readWorker(worker s) {
     printf("\t%s \t\t%s \t\t%d시 %2d분 \t%d시 %2d분\t약 %d시간", s.name, s.position, s.iHour, s.iMin, s.oHour, s.oMin, s.totalWorked);
 }
 
+
 void listWorker(worker *s, int count) {
     printf("\n********* 직원 출근 기록 **********\n");
     printf("\n번호\t직원이름\t직원직급\t직원 출근 시간\t직원 퇴근 시간\t직원 총 근무 시간(시간만 계산)\n");
