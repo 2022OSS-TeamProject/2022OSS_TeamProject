@@ -9,9 +9,8 @@ int selectWorker(){
 }
 
 void readWorker(worker s) {
-    printf("\t%s \t\t%s \t\t%d시 %2d분 \t%d시 %2d분\t약 %d시간", s.name, s.position, s.iHour, s.iMin, s.oHour, s.oMin, s.totalWorked);
+    printf("\t%s \t\t%s \t\t%d시 %2d분 \t%d시 %2d분\t약 %d시간\n", s.name, s.position, s.iHour, s.iMin, s.oHour, s.oMin, s.totalWorked);
 }
-
 
 void listWorker(worker *s, int count) {
     printf("\n********* 직원 출근 기록 **********\n");
