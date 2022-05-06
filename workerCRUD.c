@@ -7,7 +7,7 @@ int selectWorker(){
     scanf("%d", &Worker);
     return Worker;
 }
-
+     
 void readWorker(worker s) {
     printf("\t%s \t\t%s \t\t%d시 %2d분 \t%d시 %2d분\t약 %d시간", s.name, s.position, s.iHour, s.iMin, s.oHour, s.oMin, s.totalWorked);
 }
