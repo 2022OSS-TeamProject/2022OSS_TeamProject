@@ -34,7 +34,7 @@ int main(void){
             int no=selectDataNo(sp, index);
             if (no==0) {
                 printf("=> 취소됨!\n");
-                continue;
+                continue;  
             }
             int deleteok;
             printf("정말로 삭제하시겠습니까? (삭제 : 1)");
