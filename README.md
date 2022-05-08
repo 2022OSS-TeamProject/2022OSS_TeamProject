@@ -1,5 +1,6 @@
-<img src="https://user-images.githubusercontent.com/100776540/166138140-6fe3e7d2-0edd-4c90-b576-eeee4247f20c.jpg" width="300" height="100"> :bulb:
-***현대 사회를 위한 다기능 출입 관리 시스템, `In&Out`입니다.*** :bulb:
+<p align="center"><img src="https://user-images.githubusercontent.com/100776540/166138140-6fe3e7d2-0edd-4c90-b576-eeee4247f20c.jpg" width="400" height="150"> 
+  
+<center> :bulb: 현대 사회를 위한 다기능 출입 관리 시스템, `In&Out`입니다. :bulb: </center>
 
 2022OSS_TeamProject(출퇴근 관리 시스템) 
 =============
