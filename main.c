@@ -10,7 +10,7 @@ int main(void){
     // count = loadData(sp, 50);
     // index = count;
 
-    while (1){
+    while (1){     
         a = selectWorker();
         if (a == 0) break;
         if ( a == 1 || a == 3 || a == 4 || a == 5 || a == 6 || a == 7 || a == 8) {
