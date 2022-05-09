@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+     
 typedef struct Worker{
     char name[20];       //직원의 이름
     char position[20];   //직원의 직급
