@@ -8,7 +8,7 @@ void saveData(worker *s, int count) {
         fprintf(fp, "%s, %s, %d %d %d %d %d\n", s[i].name, s[i].position, s[i].iHour, s[i].iMin, s[i].oHour, s[i].oMin, s[i].totalWorked);
     }
     fclose(fp);
-    printf("=> 저장됨! \n");
+    printf("=> 저장됨! \n");    
 }
     
 int loadData(worker *s, int number) {
