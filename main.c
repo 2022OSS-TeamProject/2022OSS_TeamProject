@@ -7,8 +7,8 @@ int main(void){
     int a;
     int index=0;
 
-    // count = loadData(sp, 50);
-    // index = count;
+    count = loadData(sp, 50);
+    index = count;
 
     while (1){     
         a = selectWorker();
@@ -54,7 +54,7 @@ int main(void){
                 }
             }
         }
-        /*else if (a==5) {
+        else if (a==5) {
             saveData(sp, index);
         }
         else if (a==6) {
@@ -65,7 +65,7 @@ int main(void){
         }
         else if (a==8) {
             searchWorkerTotalTime(sp, count);
-        }*/
+        }
     }
     printf("종료됨!\n");
     return 0;
