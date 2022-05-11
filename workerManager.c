@@ -25,7 +25,7 @@ int loadData(worker *s, int number) {
         if (feof(fp)) break;
         count++;
     }
-    printf("=> %d 개의 직원 정보를 읽었습니다!\n", count);
+    printf("=> %d 명의 직원 정보를 읽었습니다!\n", count);
     }
     fclose(fp);
     return i;
@@ -47,14 +47,14 @@ void searchWorkerName(worker *s, int count) {
             scnt++;
         }
     }
-    printf("\n총 %d개의 직원이 있습니다.\n", scnt);
+    printf("\n총 %d명의 직원이 있습니다.\n", scnt);
     if (scnt==0) printf("=> 검색된 데이터 없음!\n");
 }   
 
 void searchWorkerPosition(worker *s, int count){
     int scnt=0;
     char search[20];
-    printf("검색할 직원 직급 ");
+    printf("검색할 직원 직급 ? ");
     scanf(" %[^\n]s", search);
     printf("\n********* 직원 출근 기록 **********\n");
     printf("\n번호\t직원이름\t직원직급\t직원 출근 시간\t직원 퇴근 시간\t직원 총 근무 시간(시간만 계산)\n");
@@ -67,7 +67,7 @@ void searchWorkerPosition(worker *s, int count){
             scnt++;
         }
     }
-    printf("\n총 %d개의 직원이 있습니다.\n", scnt);
+    printf("\n총 %d명의 직원이 있습니다.\n", scnt);
     if (scnt==0) printf("=> 검색된 데이터 없음!\n");   
 }
 
@@ -87,6 +87,6 @@ void searchWorkerTotalTime(worker *s, int count){
             scnt++;
         }
     }
-    printf("\n총 %d개의 직원이 있습니다.\n", scnt);
+    printf("\n총 %d명의 직원이 있습니다.\n", scnt);
     if (scnt==0) printf("=> 검색된 데이터 없음!\n");
 }
