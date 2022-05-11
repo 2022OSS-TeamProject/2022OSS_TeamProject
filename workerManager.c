@@ -10,7 +10,7 @@ void saveData(worker *s, int count) {
     fclose(fp);
     printf("=> 저장됨! \n");    
 }
-    
+        
 int loadData(worker *s, int number) {
     int count=0, i=0;
     FILE *fp;
