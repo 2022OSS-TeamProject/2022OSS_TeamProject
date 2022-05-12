@@ -9,7 +9,7 @@ $(TARGET) : $(OBJECTS)
 
 $(DTARGET) : $(OBJECTS)
 	$(CC) $(CFLAGS) -DDEBUG -o $@ $^
-
+      
 clean:
 	rm *.o
 	rm worker worker_debug
