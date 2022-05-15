@@ -43,7 +43,7 @@ int createWorker(worker *s) {
     scanf(" %[^\n]s", s->position);
     printf("출근 시 ? ");
     scanf(" %d", &s->iHour);
-    printf("출근 분 ? ");
+    printf("출근 분 ? ");   
     scanf(" %d", &s->iMin);
     printf("퇴근 시 ? ");
     scanf(" %d", &s->oHour);
