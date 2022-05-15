@@ -10,7 +10,7 @@ typedef struct Worker{
     int oMin;            //직원 퇴근 분
     int totalWorked;     //직원 총 하루 근무시간 (시까지만 표출)
 } worker;   
-   
+      
 int selectWorker();                               // 원하는 기능을 고르게 하는 함수 (기본 출력)
 int selectDataNo(worker *s, int count);          // 함수 구현을 위해 특정 직원의 데이터 위치를 선정하기 위한 함수 (listWorker()로 보여주고 입력값을 받음)
 void listWorker(worker *s, int count);            // readWorker()전에 삭제된 값을 제외한 직원을 알려주는 함수
