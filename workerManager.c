@@ -49,7 +49,7 @@ void searchWorkerName(worker *s, int count) {
     }
     printf("\n총 %d명의 직원이 있습니다.\n", scnt);
     if (scnt==0) printf("=> 검색된 데이터 없음!\n");
-}   
+}      
 
 void searchWorkerPosition(worker *s, int count){
     int scnt=0;
