@@ -13,3 +13,5 @@ $(DTARGET) : $(OBJECTS)
 clean:
 	rm *.o
 	rm worker worker_debug
+	
+	
